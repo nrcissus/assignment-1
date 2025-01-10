@@ -83,7 +83,7 @@ nav button {
 
 /* Pillars of "Bangladesh 2.0" */
 
-section h3 {
+.pillar h3 {
     font-size: 40px;
     font-weight: 800;
     color: #0E0E0E;
@@ -114,3 +114,20 @@ section h3 {
     color: #747474;
 }
 
+
+/* The Vision of Future */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn-green {
+    
+}
