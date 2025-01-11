@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Shared Style */
 .fira-sans-global {
     font-family: "Fira Sans", serif;
     font-optical-sizing: auto;
@@ -12,7 +13,11 @@
 .global-bg {
     background-color: #F5F5F5;
 }
-  
+
+.measure {
+    padding: 50px;
+    
+}
 
 
 /* nav section */
@@ -34,8 +39,8 @@ nav h3{
 }
 
 .header button:hover {
-    border: 1px solid red;
-    background-color: red;
+    border: 1px solid rgb(210, 56, 56);
+    background-color: rgb(210, 56, 56);
   }
 
 nav button {
@@ -100,7 +105,6 @@ nav button:hover {
     margin-top: 10;
 }
 
-/* Shared Style */
 
 
 /* Pillars of "Bangladesh 2.0" */
@@ -218,15 +222,15 @@ nav button:hover {
 }
 
 .btn-blu:hover {
-    background-color: #09A15C;
+    background-color: rgb(210, 56, 56);
   }
 
 .btn-grn:hover {
-    background-color: #FFC239;
+    background-color: rgb(210, 56, 56);
   }
 
 .btn-ylo:hover {
-    background-color: #5490F5;
+    background-color: rgb(210, 56, 56);
   }
 
 /* Dr. Muhammad Yunus Section */ 
@@ -359,8 +363,7 @@ select {
 
 .satelite-img {
     width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10%;
 }
 
 .news button {
@@ -377,8 +380,8 @@ select {
 }
 
 .news button:hover {
-    color: #0E0E0E;
-    background-color: #C6E4D6;
+    border: none;
+    background-color: rgb(210, 56, 56);
   }
 
 
@@ -414,7 +417,7 @@ select {
     flex: wrap;
     margin: 20px;
     color: #0E0E0E;
-    padding: 32px;
+    padding: 10px;
 }
 
 .donation-option {
@@ -450,22 +453,68 @@ select {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 80px;
 }
 
 .donation-footer input {
     width: 85%;
     /* border: 1px solid rgb(52, 51, 50);
     padding: 20px 40px; */
-    padding: 10px;
+    padding: 20px;
     font-size: 18px;
     border: 1px solid #E2E9E5;
     border-radius: 4px;
     margin-bottom: 20px;
     box-sizing: border-box;
     text-align: center;
-    
 }
 
 .donation-footer button:hover {
-    background-color: coral;
+    background-color: rgb(210, 56, 56);
+  }
+
+
+
+.newsletter {
+    padding: 80px 100px;
+    background-color: #C6E4D6;
+    border-radius: 24px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.newsletter h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.newsletter p {
+    font-size: 16;
+    color: rgba(14, 14, 14, 0.7);
+    margin-bottom: 24px;
+}
+
+.newsletter input {
+    width: 50%;
+    padding: 18px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+.newsletter button {
+    color: white;
+    background-color: #006A50;
+    padding: 17px 34px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    /*  */
+
+}
+
+.newsletter button:hover {
+    background-color: rgb(210, 56, 56);
   }
