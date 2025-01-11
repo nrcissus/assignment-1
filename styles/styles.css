@@ -8,6 +8,10 @@
     font-variation-settings:
       "wdth" 100;
   }
+
+.global-bg {
+    background-color: #F5F5F5;
+}
   
 
 
@@ -24,6 +28,16 @@ nav h3{
     color: #0E0E0E;
 }
 
+.header button {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header button:hover {
+    border: 1px solid red;
+    background-color: red;
+  }
+
 nav button {
     color: rgba(0, 106, 80, 1);
     background-color: #F5F5F5;
@@ -33,8 +47,16 @@ nav button {
     font-size: 18px;
     font-weight: 600;
     border: 2px solid rgba(0, 106, 80, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 
 }
+
+nav button:hover {
+    color: red;
+    border: 1px solid red;
+    
+  }
 
 /* hero section */
 
@@ -83,6 +105,10 @@ nav button {
 
 /* Pillars of "Bangladesh 2.0" */
 
+.pillar {
+    margin-top: 80px;
+}
+
 .pillar h3 {
     font-size: 40px;
     font-weight: 800;
@@ -92,15 +118,17 @@ nav button {
 .cards {
     display: flex;
     justify-content: space-around;
+    /* background-color: #FFFFFF; */
     /* margin: 24px; */
     gap: 24px;
     
 }
 
 .card_border {
-    border: 1px solid #393A3A;
+    border: 1px solid #E2E9E5;
     border-radius: 16px;
     padding: 24px;
+    background-color: #FFFFFF;
 }
 
 .cards h5{
@@ -117,6 +145,23 @@ nav button {
 
 /* The Vision of Future */
 
+.vishon-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.vishon-section h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.vishon-section p {
+    font-size: 16px;
+    color: rgba(14, 14, 14, 0.7);
+    margin-bottom: 32px;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -126,24 +171,129 @@ nav button {
 .card {
     background-color: #FFFFFF;
     border-radius: 10px;
+    padding: 32px;
 }
 
+.blue {
+    background-color: rgba(84, 144, 245, 0.2);
+    
+}
 
+.green {
+    background-color: rgba(198, 228, 214, 1);
+}
+
+.yellow {
+    background-color: rgba(247, 235, 207, 1);
+}
+
+.btn-blu {
+    background-color: #5490F5;
+    border: none;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-grn {
+    background-color: #09A15C;
+    border: none;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-ylo {
+    background-color: #FFC239;
+    border: none;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-blu:hover {
+    background-color: #09A15C;
+  }
+
+.btn-grn:hover {
+    background-color: #FFC239;
+  }
+
+.btn-ylo:hover {
+    background-color: #5490F5;
+  }
 
 /* Dr. Muhammad Yunus Section */ 
 
-.option-container {
+.quote {
+    font-size: 16px;
+    color: #747474;
+    margin-top: 32px;
+    background-image: url("../assets/quote-bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 24px 48px;
+    border: 1px solid #E2E9E5;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    margin-bottom: 80px;
+    /* margin-top: 80px;
+    margin-left: 10px; */
+}
+
+.quote h3 {
+    font-size: 20;
+    font-weight: 600;
+    color: #0E0E0E;
+}
+
+.quote h5 p {
+    font-size: 16px;
+    color: #747474;
+}
+
+/* Your Opinion Matters */ 
+
+.opinion-banner {
+    /* display: flex;
+    justify-content:center ; */
+    border: 1px solid #E2E9E5;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    /* width: 70%; */
+    /* margin-left: 100px; */
+    padding: 30px;
+ }
+
+
+
+/* .option-container {
  background-color: #FFFFFF;
  border-radius: 16px;
+} */
+
+.option-container {
+    width: 70%;
+    background-color: #FFFFFF;
+    text-align: center;
 }
 
 .option-container h1 {
     text-align: center;
+   
 }
 
 table {
+    width: 100%;
     border-collapse:collapse ;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    border: 1px solid #b9bcbb;
 }
 
 thead {
@@ -157,7 +307,7 @@ thead th {
 
 tbody td {
     padding: 10px;
-    border-top: 1px solid black;
+    border: 1px solid #b9bcbb;
 }
 
 select {
@@ -166,18 +316,77 @@ select {
     border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #C6E4D6;
 }
 
 
 /* Recent News */ 
 
-.news-banner-card {
-    display: flex;
-    justify-content: space-around;
+.recent_news {
+    margin-top: 80px;
 }
+
+.recent_news h1 {
+    font-size: 32;
+    color: #0E0E0E;
+    font-weight: bold;
+}
+
+.recent_news p {
+    color: #747474;
+    font-size: 16;
+}
+
+.news-description h3 {
+    font-size: 32px;
+    color: #0E0E0E;
+}
+
+.news-description p {
+    font-size: 16px;
+    color: #747474;
+}
+
+.news-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #E2E9E5;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    padding: 48px;
+}
+
+.satelite-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.news button {
+    font-size: 18px;
+    display: inline-block;
+    color: #F5F5F5;
+    background-color: #006A50;
+    border: 1px solid #006A50;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 13px 26px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.news button:hover {
+    color: #0E0E0E;
+    background-color: #C6E4D6;
+  }
 
 
 /* Donate Today */
+
+.donation-container {
+    margin-top: 8;
+}
 
 .title-description h1 {
     font-size: 40;
@@ -191,7 +400,12 @@ select {
     font-size: 16;
     color: rgba(14, 14, 14, 0.7);
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
     /* padding-top: 24px; */
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+
 }
 
 .donation-card {
@@ -204,10 +418,10 @@ select {
 }
 
 .donation-option {
-    padding: 40px 40px;
+    padding: 40px;
     font-size: 40px;
     font-weight: bold;
-    border: 1px solid #393A3A;
+    border: 1px solid #E2E9E5;
     border-radius: 16px;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -244,7 +458,7 @@ select {
     padding: 20px 40px; */
     padding: 10px;
     font-size: 18px;
-    border: 1px solid #393A3A;
+    border: 1px solid #E2E9E5;
     border-radius: 4px;
     margin-bottom: 20px;
     box-sizing: border-box;
