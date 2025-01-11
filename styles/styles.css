@@ -15,7 +15,8 @@
 }
 
 .measure {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     
 }
 
@@ -416,12 +417,13 @@ select {
     justify-content: space-around;
     flex: wrap;
     margin: 20px;
-    color: #0E0E0E;
+    color: #747474;
     padding: 10px;
 }
 
 .donation-option {
     padding: 40px;
+    color: #747474;
     font-size: 40px;
     font-weight: bold;
     border: 1px solid #E2E9E5;
